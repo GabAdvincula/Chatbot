@@ -1,0 +1,22 @@
+{
+  "id": "default-fallback-intent-id",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "I’m sorry, I didn’t understand that. Are you asking about gaming, photography, battery, or videography features?"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "videography-features-specific-model-intent-id",
+  "name": "Videography Features - Specific Model",
+  "auto": true,
+  "contexts": [
+    "videography_features_context"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.videography_specific_model",
+      "parameters": [
+        {
+          "id": "phone_model-param-id",
+          "name": "phone_model",
+          "required": true,
+          "dataType": "@PhoneModels",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            "Which phone model are you referring to?"
+          ]
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "The iPhone 14 Pro offers cinematic mode with 4K HDR video recording and advanced video stabilization.",
+            "The Sony Xperia 1 V features eye-tracking autofocus for videography and supports 120fps 4K slow-motion recording."
+          ]
+        }
+      ]
+    }
+  ]
+}

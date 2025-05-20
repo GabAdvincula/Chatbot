@@ -1,0 +1,38 @@
+{
+  "id": "battery-features-specific-model-intent-id",
+  "name": "Battery Features - Specific Model",
+  "auto": true,
+  "contexts": [
+    "battery_features_context"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.battery_specific_model",
+      "parameters": [
+        {
+          "id": "phone_model-param-id",
+          "name": "phone_model",
+          "required": true,
+          "dataType": "@PhoneModels",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            "Which phone model are you referring to?"
+          ]
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "The Asus ROG Phone 7 has a massive 6000mAh battery that supports 65W fast charging for long-lasting gaming and productivity.",
+            "The Samsung Galaxy M14 offers a 6000mAh battery with 25W fast charging, designed for extended use.",
+            "The Redmi Note 12 Pro features a 5000mAh battery with 67W fast charging for quick top-ups."
+          ]
+        }
+      ]
+    }
+  ]
+}

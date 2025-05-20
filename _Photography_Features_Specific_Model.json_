@@ -1,0 +1,37 @@
+{
+  "id": "photography-features-specific-model-intent-id",
+  "name": "Photography Features - Specific Model",
+  "auto": true,
+  "contexts": [
+    "photography_features_context"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.photography_specific_model",
+      "parameters": [
+        {
+          "id": "phone_model-param-id",
+          "name": "phone_model",
+          "required": true,
+          "dataType": "@PhoneModels",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            "Which phone model are you asking about?"
+          ]
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "The Google Pixel 7 Pro features an advanced computational photography system for stunning low-light shots.",
+            "The Samsung Galaxy S23 Ultra has a 200MP camera for incredible detail and zoom capabilities."
+          ]
+        }
+      ]
+    }
+  ]
+}

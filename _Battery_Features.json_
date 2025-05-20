@@ -1,0 +1,30 @@
+{
+  "id": "battery-features-intent-id",
+  "name": "Battery Features",
+  "auto": true,
+  "contexts": [
+    "welcome_context"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.battery_features",
+      "affectedContexts": [
+        {
+          "name": "battery_features_context",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "Phones with excellent battery life include the Asus ROG Phone 7, Samsung Galaxy M14, and Redmi Note 12 Pro. Do you have a specific phone model in mind?"
+          ]
+        }
+      ]
+    }
+  ]
+}

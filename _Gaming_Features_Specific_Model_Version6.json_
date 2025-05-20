@@ -1,0 +1,37 @@
+{
+  "id": "gaming-features-specific-model-intent-id",
+  "name": "Gaming Features - Specific Model",
+  "auto": true,
+  "contexts": [
+    "gaming_features_context"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.gaming_specific_model",
+      "parameters": [
+        {
+          "id": "phone_model-param-id",
+          "name": "phone_model",
+          "required": true,
+          "dataType": "@PhoneModels",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            "Which phone model are you asking about?"
+          ]
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "The Asus ROG Phone 7 features a Snapdragon 8 Gen 2 processor, a 165Hz AMOLED display, and advanced cooling systems for gaming.",
+            "The iPhone 14 Pro includes a ProMotion display with a 120Hz refresh rate and the A16 Bionic chip for smooth gaming performance."
+          ]
+        }
+      ]
+    }
+  ]
+}

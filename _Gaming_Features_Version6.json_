@@ -1,0 +1,30 @@
+{
+  "id": "gaming-features-intent-id",
+  "name": "Gaming Features",
+  "auto": true,
+  "contexts": [
+    "welcome_context"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.gaming_features",
+      "affectedContexts": [
+        {
+          "name": "gaming_features_context",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "Phones like the Asus ROG Phone 7, iPhone 14 Pro, and Xiaomi Black Shark 5 Pro are great for gaming. Do you have a specific phone model in mind?"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "videography-features-intent-id",
+  "name": "Videography Features",
+  "auto": true,
+  "contexts": [
+    "welcome_context"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.videography_features",
+      "affectedContexts": [
+        {
+          "name": "videography_features_context",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "Phones with excellent videography features include the iPhone 14 Pro, Samsung Galaxy S23 Ultra, and Sony Xperia 1 V. Do you have a specific phone model in mind?"
+          ]
+        }
+      ]
+    }
+  ]
+}

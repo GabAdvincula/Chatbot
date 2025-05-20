@@ -1,0 +1,30 @@
+{
+  "id": "photography-features-intent-id",
+  "name": "Photography Features",
+  "auto": true,
+  "contexts": [
+    "welcome_context"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.photography_features",
+      "affectedContexts": [
+        {
+          "name": "photography_features_context",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "Phones with excellent photography features include the Google Pixel 7 Pro, iPhone 14 Pro, and Samsung Galaxy S23 Ultra. Do you have a specific phone model in mind?"
+          ]
+        }
+      ]
+    }
+  ]
+}
